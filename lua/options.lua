@@ -1,5 +1,3 @@
-vim.cmd("colorscheme tokyonight-night")
-
 -- tab
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -21,6 +19,8 @@ vim.opt.undofile = true
 vim.opt.cursorline = false
 
 vim.opt.signcolumn = "yes"
+
+vim.opt.termguicolors = true
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 

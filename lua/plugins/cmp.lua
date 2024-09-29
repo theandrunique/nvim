@@ -37,7 +37,7 @@ return {
                 ['<Tab>'] = cmp.mapping.confirm { select = true },
                 ['<C-c>'] = cmp.mapping.abort(),
 
-                ['<C-Space>'] = cmp.mapping.complete({}),
+                ['<C-Space>'] = cmp.mapping.complete(),
             },
 
             sources = cmp.config.sources({

@@ -31,6 +31,7 @@ return {
                 map('gR', telescope.lsp_references, '[G]oto [R]eferences')
 
                 map('gr', vim.lsp.buf.rename, '[R]e[n]ame')
+                map('<F2>', vim.lsp.buf.rename, '[R]e[n]ame')
 
                 map('gi', telescope.lsp_implementations, '[G]oto [I]mplementation')
 
