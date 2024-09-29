@@ -5,6 +5,7 @@ return {
         build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
+                indent = { enable = true },
                 ensure_installed = { "lua" },
                 -- Install parsers synchronously (only applied to `ensure_installed`)
                 sync_install = false,
