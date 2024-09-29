@@ -19,7 +19,7 @@ return {
       builtin.resume()
     end, {})
 
-    vim.keymap.set("n", "<leader>b", function()
+    vim.keymap.set("n", "<leader><leader>", function()
       builtin.buffers(themes.get_dropdown())
     end, {})
 
