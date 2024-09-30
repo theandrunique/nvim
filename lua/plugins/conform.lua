@@ -7,6 +7,7 @@ return {
 				python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
 				-- rust = { "rustfmt", lsp_format = "fallback" },
 				javascript = { "prettier" },
+				csharp = { "csharpier" },
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
