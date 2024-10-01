@@ -1,8 +1,8 @@
 return {
-    'williamboman/mason.nvim',
+    "williamboman/mason.nvim",
     dependencies = {
-        'williamboman/mason-lspconfig.nvim',
-        'WhoIsSethDaniel/mason-tool-installer.nvim',
+        "williamboman/mason-lspconfig.nvim",
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
     },
     config = function()
         local mason = require("mason")
@@ -14,9 +14,10 @@ return {
         mason_lspconfig.setup({
             ensure_installed = {
                 "pyright",
-                -- "rust-anylizer",
+                "rust_analyzer",
                 "lua_ls",
-            }
+                "omnisharp",
+            },
         })
 
         mason_tool_installer.setup({
@@ -24,8 +25,7 @@ return {
                 "ruff",
                 "stylua",
                 "prettier",
-            }
+            },
         })
-    end
+    end,
 }
-
