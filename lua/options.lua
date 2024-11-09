@@ -22,6 +22,9 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.termguicolors = true
 
+-- completions status in statusline
+vim.cmd("set statusline+=%3{codeium#GetStatusString()}")
+
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.keymap.set("n", "<leader>y", '"+y', {})
